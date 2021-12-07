@@ -8,4 +8,6 @@
             $year/100 : 
                 ($year/100) - (($year % 100)/100)+1;
     }
+
+    echo century($_POST['year'])
 ?>

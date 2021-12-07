@@ -9,7 +9,7 @@
     }
 
     //catch how many times which number repeated 
-    $repetitions = arr_count_values($arr);
+    $repetitions = array_count_values($arr);
 
     //check how many times this number was repeated and display on the screen 
     foreach ($repetitions as $key => $repetition) {

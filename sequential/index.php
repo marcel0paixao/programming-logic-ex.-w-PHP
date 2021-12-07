@@ -44,15 +44,15 @@
             sort($sorted);
             
             //re-indexing $temp keys to make comparison possible 
-            $reindexed_temp = arr_values($temp);
+            $reindexed_temp = array_values($temp);
 
             //variable to check for repeated number 
             $repeatedNumbers = false;
 
-            if (max(arr_count_values($reindexed_temp)) > 1) {
+            if (max(array_count_values($reindexed_temp)) > 1) {
                 //if repeated, we check that arr is the size of the number of times it was repeated,
                 //since arrs filled with the exact same number are true, so writing the repeating boolean 
-                if (sizeof($reindexed_temp) == max(arr_count_values($reindexed_temp))) {
+                if (sizeof($reindexed_temp) == max(array_count_values($reindexed_temp))) {
                     $repeatedNumbers = false;
                 }
                 else {
@@ -74,6 +74,6 @@
             echo $arr[$i][$j] . ($j+1 == count($arr[$i]) ? '' : ', ');
         }
         echo '] ';
-        echo sequenciaCrescente($arr[$i]) . '<br/>';
+        echo ascSequence($arr[$i]) . '<br/>';
     }
 ?>
