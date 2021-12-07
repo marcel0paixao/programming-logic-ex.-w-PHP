@@ -5,5 +5,5 @@ I thought if I publish my used codes instead delete, will be better used. I'll u
 
 ## You don't need to open the files to see the code, just run the repo
 <img alt="Screenshot" title="#Screenshot" src="./images/screen.png" />
-### Just type in the root folder of the repository
+<h3>Just type in the root folder of the repository:</h3>
 $ php -S localhost:8000
